@@ -1,0 +1,108 @@
+#blockAutocomplete {
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 150px;
+    border-radius: 5px;
+    min-width: 320px;
+}
+#title {
+    background: rgb(238, 238, 238);
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    color: rgb(95, 95, 95); 
+    font-size: 1.3em;
+}
+#blockInput {
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-start; 
+    position: relative;
+    /* border: 1px solid black; */
+    height: auto;
+    margin: 20px 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid black;
+   
+}
+#input {
+    width: 100%;
+    outline: none;
+    border-style: none;
+    /* border-bottom: 1px solid rgb(41, 39, 39); */
+    /* width: 100%; */
+    font-size: 1.8em;
+    
+    
+}
+#label {
+    position: absolute;
+    
+}
+.label {
+    transition: 0.3s;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    font-size: 1.6em;
+    left: 7px;
+    top: 10px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.labelmodyfi {
+    color: rgb(41, 39, 39);
+    font-size: 0.9em;
+    left: 7px;
+    top: -17px;
+    transition: 0.3s;
+}
+.elementSearch {
+    /* width: auto; */
+    text-align: center;
+    margin-top: 5px;
+    /* height: 26px; */
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#blockList {
+    transition: 0.9s;
+    
+    background: white;
+    margin: 20px 20px;
+    margin-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+}
+li {
+    list-style: none;
+    width: 473px;
+}
+li:hover {
+    
+    cursor: pointer;
+    background:  rgb(157, 238, 248);
+}
+#elementSearch {
+    display: flex;
+}
+ul {
+    display: none;
+    margin-top: 0px;
+    width: 100%;
+   
+}
+span {
+    cursor: pointer;
+}
+span:hover {
+    background: rgb(245, 64, 64);
+    transition: 0.5s;
+}
+
+
+
+
