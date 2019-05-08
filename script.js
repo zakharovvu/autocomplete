@@ -16,11 +16,8 @@ function startFocus() {
     blockInput.style.borderBottom = '4px solid rgb(44, 102, 228)';
 } 
 function endFocus() {
-   
     blockInput.style.borderBottom = '';
-   
     blockInput.classList.toggle('border-b');
-
     setTimeout(run, 500);
     function run() {
         if (!elementSearch.children.length) {
@@ -30,21 +27,20 @@ function endFocus() {
 }
 
 function setBlockInput(e) {
+    
     if (e.srcElement.parentNode.id === 'blockInput') {
         label.classList.add('labelmodyfi');
     } else {
         ul.style.display = '';
+        input.value = ''
+        keyboard()
     }
-
     if (e.target.tagName === 'LI') {
         let item = document.createElement('span');
-
         item.classList.add('elementSearch');
         item.innerHTML = e.target.innerHTML;
         elementSearch.insertBefore(item, elementSearch.lastChild);
     }
-   
-    console.dir(e.target);
     if (e.target.tagName === 'IMG') {
         elementSearch.removeChild(e.target.parentElement);
     }
@@ -54,12 +50,9 @@ function setBlockInput(e) {
 }
 
 function keyboard() {
-    
     setTimeout(run, 500);
-    
     function run() {
         for (let i = 0; i < ul.children.length; i++) {
-            
             let strLi = ul.children[i].textContent.trim().toLocaleLowerCase();
             let inputVal = input.value;
 
@@ -67,9 +60,7 @@ function keyboard() {
                 ul.children[i].style.display = 'none';
             } else {
                 ul.children[i].style.display = 'block';
-            }
-            
+            } 
         }
     }
-
 }
